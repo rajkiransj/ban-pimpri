@@ -460,3 +460,67 @@ td {
     line-height: 1.8;
     color: #444;
 }
+
+.yojana-item:hover {
+    background: #f9f9f9;
+}
+
+/* contacts */
+
+.contact-section {
+    padding: 40px 20px;
+    background: #f5f5f5;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* CARD */
+.contact-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* HEADER COLORS */
+.contact-card.red h3 {
+    color: #d32f2f;
+}
+
+.contact-card.yellow h3 {
+    color: #f9a825;
+}
+
+.contact-card.green h3 {
+    color: #2e7d32;
+}
+
+/* ITEM */
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-item a {
+    background: #2e7d32;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
