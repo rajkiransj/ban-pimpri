@@ -18,7 +18,7 @@
     </header>
 
     <nav class="navbar">
-        <a href="index.html">मुख्य पृष्ठ</a>
+        <a href="index.html" class="active">मुख्य पृष्ठ</a>
         <a href="structure.html">प्रशासकीय संरचना</a>
         <a href="panchayat.html">पंचायत संरचना</a>
         <a href="yojana.html">प्रकल्प व योजना</a>
@@ -50,7 +50,7 @@
             <div class="story-container">
 
                 <div class="story-image">
-                    <img src="images/Parshwabhoomi.png" alt="शौर्यकथा">
+                    <img src="images/Parshwabhoomi.png" alt="शौर्यकथा" onclick="openImage(this)">
                 </div>
 
                 <div class="story-text">
@@ -98,71 +98,14 @@
 
         </div>
 
-        <!-- <section class="info-section">
-            <h2 class="section-title">
-                पार्श्वभूमी : हरिभाऊ दगडू जगताप यांची शौर्यकथा
-            </h2>
-
-            <div class="info-container">
-
-                <div class="info-image">
-                    <img src="images/Parshwabhoomi.png" alt="हरिभाऊ दगडू जगाताप">
-                </div>
-
-                <div class="info-text">
-                    <p>
-                        हुतात्मा हरिभाऊ दगडू जगताप यांचा जन्म इ.स. १९१५ रोजी बनपिंप्री या गावी झाला. त्यांचे शिक्षण
-                        इ.दावी पर्यंत झाले.
-                        इ.स. १९४७ मध्ये रजाकारी हल्ल्याचा प्रतिकार करीत असताना आष्टी तालुक्यातील
-                        टाकळी आमिया येथे वीर झाले.
-                        अशा या गरीब शेतकऱ्याच्या कुटुंबात जन्मलेल्या शुरवीराची शौर्यकथा घेऊन
-                        आलेला आढावा.
-                    </p>
-
-
-                    <p>
-                        हरीभाऊ सकाळी लवकर उठून आंघोळ करून शेतावरील विहिरीवर मोट हाकण्यासाठी गेले.
-                        परंतु त्यांच्या मनात
-                        वेगळेच विचार होते. ते म्हणजे रजाकारांशी प्रतिकार कसा करायचा? हरीभाऊ गावात आल्यानंतर गावातील
-                        निवडक १० ते २० तरुण एकत्र जमले. त्यामध्ये भानुदास पठारे,
-                        गेनाजी धुलगुडे पठारे, लहू अलवट,
-                        बलभीमराव विठोबा जगताप, गणपत यादव जगताप,
-                        भागुजी वांभार, देवराम नाथा जगताप, हरीभाऊ दगडू जगताप
-                        इत्यादी.
-                    </p>
-                    <p>
-                        ​हे सर्व तरुण हातुळण मार्गे सोलापूरवाडी या गावात साहेबराव
-                        थोरवे यांच्याकडे मुक्कामास थांबले.
-                        तेथे मुंबईहून धाडे आलेले होते. त्यांनी शत्रूशी कसे लढायचे याचे मार्गदर्शन केले. दुसऱ्या दिवशी
-                        हरीभाऊ आणि त्यांचे तरुण सहकारी टाकळी आमिया
-                        या गावाजवळ आले. एकशिंगे यांच्या शेतात सर्वांची बैठक
-                        झाली. शेतामध्ये सूर्यास्त होऊन अंधार पडू लागला.
-                        तेवढ्यात समोरून निजामाचे चार बंदुकधारी सैनिक
-                        धावून आले व बेछूट गोळीबार करू लागले.
-                        ​यांच्याकडे काठ्या, कुऱ्हाडी, तलवारी, गोफणी, बंदुका अशी हत्यारे देण्यात आली. नेमबाजीत हरीभाऊ
-                        निष्णात असल्यामुळे त्यांच्याकडे बंदूक देण्यात आली होती.
-                        समोरून गोळीबार सुरू असताना त्यांनीही
-                        प्रत्युत्तर दिले. परंतु त्यांच्याकडे असलेल्या चार-पाच बंदुकीच्या गोळ्या संपल्या.
-                        हरीभाऊ आणि
-                        त्यांचे सहकारी ज्वारीच्या उभ्या पिकात झोपून पुढे सरकू लागले.
-                        तरीही समोरून गोळीबार सुरूच होता.
-                        अशा या रणधुमाळीत हरीभाऊ जगताप यांना वीरमरण आले.
-                    </p>
-                </div>
-
-            </div>
-
-        </section> -->
-
-        <section class="info-section">
+        <div class="story-section">
             <h2 class="section-title">
                 प्रसिद्ध देवस्थान : काळभैरवनाथ मंदिर
             </h2>
 
-            <div class="info-container">
+            <div class="story-container">
 
-
-                <div class="info-text">
+                <div class="story-text">
                     <p>
                         अहिल्यानगर जिल्ह्यातील श्रीगोंदा तालुक्यातील बनपिंप्री येथील काळभैरवनाथ व जोगेश्वरी माता मंदिर
                         हे एक अत्यंत
@@ -199,14 +142,16 @@
                         येतात. मंदिराची भव्यता आणि लाल दगडांमधील कोरीवकाम फोटोग्राफीसाठी उत्तम पार्श्वभूमी ठरते.
                     </p>
                 </div>
-                <div class="info-image">
-                    <img src="images/img9.JPG" alt="मंदिर">
-                </div>
 
+                <div class="story-image">
+                    <img src="images/img9.JPG" alt="शौर्यकथा" onclick="openImage(this)">
+
+                </div>
 
             </div>
 
-        </section>
+        </div>
+
 
     </main>
 
@@ -296,6 +241,10 @@
 
     </footer>
 
+
+    <div id="imageModal" class="modal" onclick="closeImage()">
+        <img id="modalImg">
+    </div>
 </body>
 <script>
     let slides = document.querySelectorAll(".slide");
@@ -308,6 +257,15 @@
     }
 
     setInterval(showSlide, 3000);
+
+    function openImage(img) {
+        document.getElementById("imageModal").style.display = "block";
+        document.getElementById("modalImg").src = img.src;
+    }
+
+    function closeImage() {
+        document.getElementById("imageModal").style.display = "none";
+    }
 </script>
 
 </html>
