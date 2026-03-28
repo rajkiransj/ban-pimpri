@@ -605,11 +605,6 @@ td {
     transform: scale(1.05);
 }
 
-.video-box {
-    max-width: 700px;
-    margin: 20px auto;
-}
-
 .video-box video {
     width: 100%;
     height: auto;
@@ -620,4 +615,25 @@ td {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+}
+
+.video-box {
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+}
+
+/* wrapper controls overflow */
+.video-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* VIDEO FIX */
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
 }
