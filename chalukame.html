@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>महत्वाचे क्रमांक | ग्रामपंचायत बनपिंप्री</title>
+    <title>प्रकल्प व योजना | ग्रामपंचायत बनपिंप्री </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -24,7 +24,7 @@
 
             <div class="dropdown-content">
                 <a href="nidhi.html">निधी उत्पन्न व खर्चाचा तपशील</a>
-                <a href="chalukame.html">चालू असलेली कामे</a>
+                <a href="chalukame.html" class="active">चालू असलेली कामे</a>
                 <a href="purnkame.html">पूर्ण झालेली कामे</a>
                 <a href="sevayadi.html">नागरिक सेवांची यादी</a>
                 <a href="rti.html">RTI 4 (1) ख -1 ते 17 मुद्दे माहिती</a>
@@ -32,81 +32,28 @@
             </div>
         </div>
         <a href="gallery.html">गॅलरी</a>
-        <a href="contacts.html" class="active">महत्वाचे क्रमांक</a>
+        <a href="contacts.html">महत्वाचे क्रमांक</a>
     </nav>
 
     <main class="container">
 
-        <section class="contact-section">
+        <section class="yojana-section">
 
-            <h2 class="section-title">महत्वाचे क्रमांक</h2>
+            <h2 class="section-title">चालू असलेली कामे</h2>
 
-            <div class="contact-grid">
+            <!-- ITEM 1 -->
+            <div class="yojana-item">
 
-                <!-- COLUMN 1 -->
-                <div class="contact-card red">
-                    <h3>⚠️ आपत्कालीन संपर्क</h3>
-
-                    <div class="contact-item">
-                        <span>महिला हेल्पलाईन</span>
-                        <a href="tel:1091">📞 १०९१</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <span>पोलीस स्टेशन</span>
-                        <a href="tel:100">📞 १०० किंवा ११२</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <span>चाइल्ड हेल्पलाइन</span>
-                        <a href="tel:1098">📞 १०९८</a>
-                    </div>
-                </div>
-
-                <!-- COLUMN 2 -->
-                <div class="contact-card yellow">
-                    <h3>📞 सरकारी कार्यालये</h3>
-
-                    <div class="contact-item">
-                        <span>ग्रामपंचायत कार्यालय</span>
-                        <a href="tel:7588603581">📞 7588603581</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <span>तलाठी कार्यालय</span>
-                        <a href="tel:7387759259">📞 7387759259</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <span>कृषी विभाग</span>
-                        <a href="tel:9767497602">📞 9767497602</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <span>सरपंच</span>
-                        <a href="tel:9420401515">📞 9420401515</a>
-                    </div>
-
-                </div>
-
-                <!-- COLUMN 3 -->
-                <div class="contact-card green">
-                    <h3>💚 आरोग्य सेवा</h3>
-
-                    <div class="contact-item">
-                        <span>आपत्कालीन सेवा</span>
-                        <a href="tel:108">📞 108</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <span>आरोग्य उपकेंद्र</span>
-                        <a href="tel:8805923817">📞 8805923817</a>
-                    </div>
-                </div>
-
+                <p>
+                    ​ग्रामपंचायत बनपिंपरी अंतर्गत सध्या चालू असलेली कामे खालील प्रमाणे<br>
+                    1) स्मशानभूमी विकास करणे<br>
+                    2) बंदिस्त गटर करणे
+                </p>
             </div>
 
         </section>
+
+
     </main>
 
     <footer class="footer">
@@ -149,7 +96,21 @@
         </div>
 
     </footer>
+    <div id="imageModal" class="modal" onclick="closeImage()">
+        <img id="modalImg">
+    </div>
 
 </body>
+<script>
+
+    function openImage(img) {
+        document.getElementById("imageModal").style.display = "block";
+        document.getElementById("modalImg").src = img.src;
+    }
+
+    function closeImage() {
+        document.getElementById("imageModal").style.display = "none";
+    }
+</script>
 
 </html>
